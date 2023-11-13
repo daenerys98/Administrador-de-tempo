@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Cor de fundo */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff; /* Cor do container de login */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #495057; /* Cor do texto dentro do container de login */
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #343a40; /* Cor do título */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            border: 1px solid #ced4da; /* Cor da borda do campo de input */
+            color: #495057; /* Cor do texto dentro do campo de input */
+        }
+
+        .btn-primary {
+            background-color: #9d9d9d; /* Cor de fundo do botão de login */
+            color: #fff; /* Cor do texto dentro do botão de login */
+            border: 1px solid #9d9d9d; /* Cor da borda do botão de login */
+        }
+
+        .btn-primary:hover {
+            background-color: #9d9d9d; /* Cor de fundo do botão de login ao passar o mouse */
+            border: 1px solid #9d9d9d; /* Cor da borda do botão de login ao passar o mouse */
+        }
+
+        .btn-return {
+            background-color: #9d9d9d; /* Cor de fundo do botão de retorno */
+            color: #fff; /* Cor do texto dentro do botão de retorno */
+            border: 1px solid #9d9d9d; /* Cor da borda do botão de retorno */
+        }
+
+        .btn-return:hover {
+            background-color: #9d9d9d; /* Cor de fundo do botão de retorno ao passar o mouse */
+            border: 1px solid #9d9d9d; /* Cor da borda do botão de retorno ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="POST">
+            <div class="form-group">
+                <input type="text" name="login" class="form-control" placeholder="Seu usuário">
+            </div>
+            <div class="form-group">
+                <input type="password" name="senha" class="form-control" placeholder="Sua senha">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+        <p>{{ error }}</p>        
+        <p><a href="{{url_for("index")}}" >Voltar a página inicial</a></p>
+    </div>
+</body>
+</html>

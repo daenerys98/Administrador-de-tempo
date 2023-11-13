@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Administrador de Tempo{% endblock %}
+
+{% block content %}
+    <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{url_for('index')}}">Administrador de Tempo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('nova')}}">Nova Tarefa</a></li>
+                <li><a href="{{url_for('tarefas')}}">Tarefas</a></li>
+                <li><a href="{{url_for('contatos')}}">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{url_for('login')}}"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Links para estilos e scripts do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</nav>
+{% endblock %}

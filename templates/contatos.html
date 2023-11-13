@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Tempo - Contatos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Cor de fundo */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #343a40; /* Cor do texto */
+        }
+
+        p {
+            color: #495057; /* Cor do texto */
+            margin-bottom: 15px; /* Espaçamento inferior entre os parágrafos */
+        }
+
+        a {
+            color: #007bff; /* Cor do link */
+        }
+
+        a:hover {
+            text-decoration: none; /* Remover sublinhado ao passar o mouse sobre o link */
+        }
+
+        button {
+            margin-top: 20px; /* Espaçamento superior entre o parágrafo e o botão */
+        }
+    </style>
+</head>
+<body>
+    <h1>Contatos</h1>
+    <p>Linkedin <a href="https://www.linkedin.com/in/karol-lima-08b5531a6/" target="_blank" rel="noopener noreferrer">: Clique aqui </a>.</p>
+    <p>Github <a href="https://github.com/daenerys98" target="_blank" rel="noopener noreferrer">: Clique aqui </a>.</p>
+    <p>E-mail <a href="https://karolestudos6@gmail.com" target="_blank" rel="noopener noreferrer">: karolestudos6@gmail.com </a>.</p>
+    <div>
+        <a href="{{url_for('index')}}"><button class="btn btn-secondary">Voltar à página principal</button></a>
+    </div>
+</body>
+</html>
